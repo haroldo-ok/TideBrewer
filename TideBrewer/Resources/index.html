@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Editor</title>
+	<style type="text/css" media="screen">
+		body {
+			overflow: hidden;
+		}
+
+		#input { 
+			margin: 0px;
+			position: absolute;
+			top: 0px;
+			width:50%;
+			left: 0px;
+			height:90%;
+			float:left;
+		}
+		#output { 
+			margin: 0px;
+			position: absolute;
+			top: 0px;
+			width: 50%;
+			right: 0px;
+			height: 90%;
+		}
+		#debug {
+			margin: 0px;
+			position:absolute;
+			bottom: 0px;
+			left: 0px;
+			width: 100%;
+			height: 10%;
+			border:1px solid blue;
+			overflow-y:scroll;
+		}
+		
+		#filebrowser, #filebrowser td {
+			border:1px solid black;
+			background:white;
+		}
+		#filebrowser {
+			width:100%;
+		}
+		#filebrowser td {
+			padding:2px 15px;
+			cursor:pointer;
+		}
+		#dialog {
+			z-index:100;
+			overflow:hide;
+			width:400px;
+			border: 2px solid black;
+			background:white;
+		}
+
+	</style>
+
+
+</head>
+<body>
+
+	<div id="input"></div>
+	<div id="output"></div>
+	<div id="debug"></div>
+
+	<script src="brewer/lib/jquery-1.6.2.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="brewer/lib/coffee-script.js" type="text/javascript" charset="utf-8"></script>
+	<script src="brewer/ace/build/src/ace.js" type="text/javascript" charset="utf-8"></script>
+	<!-- <script src="ace/build/src/theme-twilight.js" type="text/javascript" charset="utf-8"></script> -->
+	<script src="brewer/ace/build/src/mode-coffee.js" type="text/javascript" charset="utf-8"></script>
+	<script src="brewer/ace/build/src/mode-javascript.js" type="text/javascript" charset="utf-8"></script>
+
+	<script src="editor.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script src="app.js" type="text/javascript" charset="utf-8"></script>
+
+</body>
+</html>
